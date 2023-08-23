@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions</title>
+    <link rel="stylesheet" href="transitions.css">
+</head>
+<body>
+    <div class="tOne">
+        <button>Transition!</button>
+        <p>Hover the mouse over the rectangle</p>
+    </div><br>
+    <div class="tTwo">
+        <div>
+            <p>This is a stacking context example</p>
+            <!-- stacking, from my understanding, occurs when there are
+            two transitions to happen and the one 'above' starts first so
+            then the other can go -- in this case, the rotating starts
+            first, and then the button starts its own transition -->
+            <!-- just an extra comment here that the word START is very
+            important, as the 'above' will technically start first but it
+            will depend on the timing delay set up to actually see the
+            transition, if I have a longer timing delay for the 'above'
+            transition, it will take longer for me to see it than the 'below'
+            transition that has a shorter timing delay -->
+            <button>Transition!</button>
+            <p>Hover the mouse over the rectangle</p>
+        </div>
+    </div>
+</body>
+</html>

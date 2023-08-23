@@ -1,0 +1,62 @@
+body {
+    background-color: #111827;
+    color: #D6AC4F;
+    font-family: Inter,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Transition One */
+div.tOne > button {
+    border: 1.5px solid #ffffffc8;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background-color: #111827;
+    color: #111827;
+    /* transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.25s; */
+    transition: background-color 1s ease-out 0.25s; /* same as all the properties written out above */
+}
+
+div.tOne > button:hover {
+    background-color: #ffffffc8;
+}
+
+
+/* Transition Two */
+div.tTwo > div {
+    width: 250px;
+    height: 250px;
+    transition: transform 3s 1s;
+    border: 2px solid white;
+    background-color: #D6AC4F;
+    /* font */
+    color: white;
+    font-size: .8em;
+    text-align: center;
+}
+
+div.tTwo > div:hover {
+    transform: rotate(180deg);
+}
+
+div.tTwo > div > button {
+    border: 1.5px solid #ffffffc8;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    background-color: #111827;
+    color: #111827;
+    transition: background-color 1s ease-out 0.25s;
+}
+
+div.tTwo > div > button:hover {
+    background-color: #ffffffc8;
+}
